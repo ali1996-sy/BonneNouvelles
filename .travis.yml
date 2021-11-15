@@ -47,4 +47,4 @@ script:  echo "scripts" #phpunit --configuration phpunit_$DB.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
-  email: "xxxx@student.vinci.be"
+  email: "abdulhamid.ali@student.vinci.be"
