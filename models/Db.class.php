@@ -7,7 +7,7 @@ class Db
     private function __construct()
     {
         try {
-            $this->_db = new PDO('pgsql::host=ec2-34-251-245-108.eu-west-1.compute.amazonaws.com;dbname=d46onauvfi9136;charset=utf8', 'vgqjmqruzubtwr', '41d0e4be8cfa72bf5425495476b4786773ba91c77800089a933ca4059e6e4c27');
+            $this->_db = new PDO('postgres://vgqjmqruzubtwr:41d0e4be8cfa72bf5425495476b4786773ba91c77800089a933ca4059e6e4c27@ec2-34-251-245-108.eu-west-1.compute.amazonaws.com:5432/d46onauvfi9136');
             $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } 
 		catch (PDOException $e) {
